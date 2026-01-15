@@ -44,4 +44,3 @@ func (w *World) Set(x, y int, state CellState) {
 		w.cells[y][x] = state
 	}
 }
-
