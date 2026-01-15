@@ -2,21 +2,22 @@ package main
 
 import (
 	"fmt"
+	"time"
 
 	"github.com/smazmi/game-of-life-go/game"
+	"github.com/smazmi/game-of-life-go/utils"
 )
 
 func main() {
-	world := game.NewWorld(5, 10)
+	x, y := utils.Size()
+	world := game.NewWorld(y, x)
 
-	world.Set(1, 2, game.Alive)
-	world.Set(3, 4, game.Alive)
-	world.Set(3, 5, game.Alive)
-	world.Set(3, 3, game.Alive)
-	world.Set(3, 2, game.Alive)
+	game.SeedRandom(world, 0.5)
 
-	fmt.Println(world)
-
-	world = world.Next()
-	fmt.Println(world)
+	for {
+		utils.Clear()
+		fmt.Println(world)
+		world = world.Next()
+		time.Sleep(200 * time.Millisecond)
+	}
 }
