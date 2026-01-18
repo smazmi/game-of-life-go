@@ -9,10 +9,17 @@ import (
 )
 
 func main() {
-	x, y := utils.Size()
-	world := game.NewWorld(y, x)
+	worldWidth, worldHeight := utils.Size()
 
-	game.SeedRandom(world, 0.5)
+	world, err := game.LoadRLECentered(
+		"/home/arno/projects/game-of-life-go/examples/copperhead.rle",
+		worldWidth,
+		worldHeight,
+	)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
 	for {
 		utils.Clear()

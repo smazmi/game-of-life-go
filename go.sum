@@ -1,3 +1,5 @@
+github.com/tlinden/golsky v0.0.8 h1:82detGaBjpIVkcRrjdv0U+9uMNokC5w9adXx5LS5z/k=
+github.com/tlinden/golsky v0.0.8/go.mod h1:mKwMnn4amub1PIAXN1jor7U8wYTd0bhUAR2rpiYKqnc=
 golang.org/x/sys v0.40.0 h1:DBZZqJ2Rkml6QMQsZywtnjnnGvHza6BTfYFWY9kjEWQ=
 golang.org/x/sys v0.40.0/go.mod h1:OgkHotnGiDImocRcuBABYBEXf8A9a87e/uXjp9XT3ks=
 golang.org/x/term v0.39.0 h1:RclSuaJf32jOqZz74CkPA9qFuVTX7vhLlpfj/IGWlqY=
