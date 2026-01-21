@@ -27,6 +27,14 @@ func NewWorld(height int, width int) *World {
 	}
 }
 
+func (w *World) GetHeight() int {
+	return w.height
+}
+
+func (w *World) GetWidth() int {
+	return w.width
+}
+
 func (w *World) inBounds(x, y int) bool {
 	return x >= 0 && x < w.width &&
 		y >= 0 && y < w.height

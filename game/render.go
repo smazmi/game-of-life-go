@@ -8,7 +8,7 @@ func (w *World) String() string {
 			case Alive:
 				grid = append(grid, '@')
 			case Dead:
-				grid = append(grid, '.')
+				grid = append(grid, ' ')
 			}
 		}
 		grid = append(grid, '\n')
