@@ -12,7 +12,7 @@ func main() {
 	worldWidth, worldHeight := utils.Size()
 
 	world, err := game.LoadRLECentered(
-		"/home/arno/projects/game-of-life-go/examples/copperhead.rle",
+		"/home/arno/projects/game-of-life-go/examples/sirrobin.rle",
 		worldWidth,
 		worldHeight,
 	)
