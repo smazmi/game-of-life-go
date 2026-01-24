@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"path/filepath"
 	"time"
 
 	"github.com/smazmi/game-of-life-go/game"
@@ -11,8 +12,10 @@ import (
 func main() {
 	worldWidth, worldHeight := utils.Size()
 
+	examplePath := filepath.Join("examples", "glidergun.rle")
+
 	world, err := game.LoadRLECentered(
-		"/home/arno/projects/game-of-life-go/examples/sirrobin.rle",
+		examplePath,
 		worldWidth,
 		worldHeight,
 	)
