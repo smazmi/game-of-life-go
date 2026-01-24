@@ -3,6 +3,7 @@ package main
 import (
 	"image/color"
 	"log"
+	"path/filepath"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/vector"
@@ -48,8 +49,10 @@ func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
 }
 
 func main() {
+	examplePath := filepath.Join("examples", "glidergun.rle")
+
 	w, err := game.LoadRLECentered(
-		"/home/arno/projects/game-of-life-go/examples/pufferfish.rle",
+		examplePath,
 		worldWidth,
 		worldHeight,
 	)
